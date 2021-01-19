@@ -1,4 +1,6 @@
 {:paths ["src"]
- :aliases {:test {:extra-paths ["test"]}}
+ :aliases {:test {:extra-paths ["test"]
+                  :extra-deps {com.opentable.components/otj-pg-embedded {:mvn/version "0.13.3"}}}}
  :deps {org.clojure/clojure {:mvn/version "1.10.1"}
-        metosin/malli {:mvn/version "0.2.1"}}}
+        metosin/malli {:mvn/version "0.2.1"}
+        seancorfield/next.jdbc {:mvn/version "1.1.613"}}}

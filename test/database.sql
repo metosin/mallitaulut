@@ -2,7 +2,7 @@ create schema app;
 
 create table app.user (
     id serial primary key,
-    username text not null
+    name text not null
 );
 
-insert into app.user (username) values ('foo'), ('bar');
+insert into app.user (name) values ('foo'), ('bar');
